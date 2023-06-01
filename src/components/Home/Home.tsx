@@ -1,20 +1,31 @@
-import { Text, View } from 'react-native'
+import { Text, View, Image } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 const Home = () => {
     return(
-        <SafeAreaView>
-            <View>
-                <Text className='text-black font-bold text-3xl'>Explore.</Text>
-                <Text className='text-black font-bold text-3xl'>Travel.</Text>
-                <Text className='text-black font-bold text-3xl'>Inspire.</Text>
+        <SafeAreaView className='flex-1'>
+   
+            <View className='absolute top-0 bottom-0 left-0 right-0'>
+                <Image source={{
+                    uri: "https://images.unsplash.com/photo-1604334270628-35da53cbc063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                }}
+                    className=' w-full h-full'
+                />
             </View>
-            <View>
+            <View className='m-5'>
+                <Text className='text-white font-bold text-5xl my-2'>Explore.</Text>
+                <Text className='text-black font-bold text-5xl my-2'>Travel.</Text>
+                <Text className='text-black font-bold text-5xl my-2'>Inspire.</Text>
+            </View>
+            <View className='mx-5 text-black'>
                 <Text className='text-black'>
                     Life is all about journey
+                </Text>
+                <Text className='text-black'>
                     Find yours.
                 </Text>
             </View>
+
         </SafeAreaView>
     )
 }
