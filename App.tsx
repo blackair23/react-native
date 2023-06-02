@@ -4,7 +4,7 @@
  *
  * @format
  */
-// C:\Users\Deivid\AppData\Local\Android\Sdk\platform-tools
+
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -16,6 +16,7 @@ import {
   View,
 } from 'react-native';
 import Home from './src/components/Home/Home';
+import Discover from './src/components/Discover/Discover';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -41,8 +42,9 @@ function App(): JSX.Element {
 
   return (
     <NavigationContainer>
-        <Stack.Navigator>
-            <Stack.Screen name='Home' component={Home}/>
+        <Stack.Navigator >
+            <Stack.Screen name='Home' component={Home} />
+            <Stack.Screen name='Discover' component={Discover} />
         </Stack.Navigator>
     </NavigationContainer>
   );
