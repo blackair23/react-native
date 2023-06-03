@@ -1,13 +1,13 @@
 import { useLayoutEffect } from 'react';
 
 
-import { Text, View, Image, Button, Touchable, TouchableOpacity } from 'react-native'
+import { Text, View, Image, TouchableOpacity } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useNavigation } from '@react-navigation/native'
 
-const Home = () => {
+export const Home = () => {
     
-    const navigation = useNavigation();
+    const navigation = useNavigation<any>();
 
     useLayoutEffect(() => {
         navigation.setOptions({
