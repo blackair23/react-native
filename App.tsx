@@ -17,6 +17,7 @@ import {
 } from 'react-native';
 import Home from './src/components/Home/Home';
 import Discover from './src/components/Discover/Discover';
+import Details from './src/components/Details/Details';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -45,6 +46,7 @@ function App(): JSX.Element {
         <Stack.Navigator >
             <Stack.Screen name='Home' component={Home} />
             <Stack.Screen name='Discover' component={Discover} />
+            <Stack.Screen name='Details' component={Details} />
         </Stack.Navigator>
     </NavigationContainer>
   );
